@@ -1,45 +1,121 @@
-body{
-    background: #060128;
+/* Define as cores principais do site */
+:root {
+    --cor-primaria: #060128;
+    --cor-secundaria: #f8f9fa;
+    --cor-terciaria: #202124;
+    --cor-destaque: #1a73e8;
+    --cor-botao: #8a2be2;
+  }
+  
+  /* Define o tamanho base da fonte do site */
+  html {
+    font-size: 16px;
+  }
+  
+  .apresentacao span{
+      font-size: 5rem;
+      color: var(--cor-secundaria);
+  }
+  
+  .apresentacao .destaque{
+      color: var(--cor-destaque);
+  }
+  
+  .apresentacao h2{
+      color: var(--cor-secundaria);
+      font-size: 3rem;
+  }
+  
+  .curriculo p{
+       color: var(--cor-secundaria);
+       font-size: 3rem;
+  }
+  
+  .curriculo a{    
+      background-color: var(--cor-botao);
+      border-radius: 5vw; 
+      display: flex;
+      padding: 5vh 10vw;
+      margin: auto;
+      margin-top: 10vh;
+      text-decoration: none;
+      color: var(--cor-secundaria);
+  }
+
+  body{
+    background: var(--cor-primaria);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    gap: 100px;
+    gap: 20vh;
 }
 
-.apresentacao{
+/* Define uma classe comum para os elementos que têm o mesmo estilo */
+.texto-centralizado{
     text-align: center;
 }
 
-.apresentacao span{
-    font-size: 5em;
-    color: antiquewhite;
-}
+/* CSS gerado pelo Copilot */
 
-.apresentacao .destaque{
-    color: blue;
-}
-
-.apresentacao h2{
-    color: antiquewhite;
-    font-size: 3em;
-}
-
-.curriculo p{
-     color: antiquewhite;
-     font-size: 3em;
-}
-
-.curriculo button{    
-    background-color: blueviolet;
-    border-radius: 50px; 
+/* Define um efeito de transição para os elementos do site */
+* {
+    transition: all ease-in-out 0.3s;
+  }
+  
+  /* Define o estilo do cabeçalho do site */
+  header {
     display: flex;
-    padding: 30px 50px;
-    margin: auto;
-    margin-top: 51px;
-}
-
-.curriculo a{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, var(--cor-primaria), var(--cor-destaque));
+    color: var(--cor-secundaria);
+    padding: 10vh;
+  }
+  
+  /* Define o estilo do título do site */
+  h1 {
+    font-size: 6rem;
+    font-weight: bold;
+  }
+  
+  /* Define o estilo do subtítulo do site */
+  h2 {
+    font-size: 4rem;
+    font-style: italic;
+  }
+  
+  /* Define o estilo da seção do currículo do site */
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-terciaria);
+    padding: 10vh;
+  }
+  
+  /* Define o estilo do texto do currículo do site */
+  p {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+  
+  /* Define o estilo do botão do currículo do site */
+  a {
+    background-color: var(--cor-botao);
+    border: none;
+    border-radius: 5vw;
+    color: var(--cor-secundaria);
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 5vh 10vw;
     text-decoration: none;
-    color: antiquewhite;
-}
+  }
+  
+  /* Define o estilo do botão do currículo do site ao passar o mouse */
+  a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10}
